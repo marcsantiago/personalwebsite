@@ -1,0 +1,59 @@
+{% extends "bootstrap/base.html" %}
+{% block metas %}
+    <meta charset="utf-8">
+    <meta name="description" content="Marc Anthony Santigo Personal WebSite">
+    <meta name="keywords" content="Biology, Flask, Programming, Marc Anthony Santiago, Diatoms, Susquehanna University, New York">
+    <meta name="author" content="Marc Anthony Santiago">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %} 
+{% block title %}Marc Santiago{% endblock %}
+{% block navbar %}
+<nav class="navbar navbar-inverse" role="navigation"> <!-- navbar-fixed-top -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle Navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/">MS</a>
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home Page</a></li>
+			<li><a href="algae">Fresh Water Algae</a></li>
+			<li><a href="{{ url_for('static', filename='documents/senior_research.pdf') }}">Senior Research Paper</a></li>
+			<li><a href="{{ url_for('static', filename='documents/cv.pdf') }}"><em>Curriculum vitae</em></a></li>
+			<li><a href="{{ url_for('static', filename='documents/tech_resume.pdf') }}">Tech Resume</a></li>
+		</ul>
+	</div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+
+{% block blockquote %}
+	<blockquote style="font-family:cursive; font-size:16px; margin:auto">"The fact of evolution is the backbone of biology, and biology is thus in the peculiar position of being a science founded on an improved theory, is it then a science or faith?" -Charles Darwin</blockquote>
+	<hr />
+{% endblock %}
+
+<div class="container">
+	<div class="page-header">
+		{% block page_content %}{% endblock %}
+	</div>
+</div>
+
+
+<div id="footer">
+	{% block footer %}
+		<h5 style="text-align:center; margin-left:5%"><a href="https://github.com/marcsantiago">GitHub</a></h5>
+		<h5 style="text-align:center; margin-left:5%"><a href="http://www.codewars.com/users/marcsantiago">codewars</a></h5>
+		<h5 style="text-align:center; margin-left:5%"><a href="http://stackoverflow.com/users/4639336/msanti">StackOverFlow</a></h5>
+		<h5 style="text-align:center; margin-left:5%"><a href="mailto:marcanthonysanti@gmail.com">marcanthonysanti@gmail.com</a></h5>
+	{% endblock %}
+</div>
+
+{% endblock %}
+
+
