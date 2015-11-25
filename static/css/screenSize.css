@@ -1,0 +1,89 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .modal.modal-wide .modal-dialog {
+    width: 90%;
+    position: absolute;
+    margin-left: 0%;
+    padding-top: 20px;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+  /* irrelevant styling */
+
+  #modalFillIn .modal-body p {
+    margin-bottom: 900px
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .modal.modal-wide .modal-dialog {
+    width: 90%;
+    position: absolute;
+    margin-left: 0%;
+    padding-top: 20px;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+  /* irrelevant styling */
+
+  #modalFillIn .modal-body p {
+    margin-bottom: 900px
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .modal.modal-wide .modal-dialog {
+    width: 90%;
+    position: absolute;
+    margin-left: 0%;
+    padding-top: 20px;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+  /* irrelevant styling */
+
+  #modalFillIn .modal-body p {
+    margin-bottom: 900px
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1000px) {
+  .modal.modal-wide .modal-dialog {
+    width: 90%;
+    position: absolute;
+    margin-left: -45%;
+    padding: 20px;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+  /* irrelevant styling */
+
+  #modalFillIn .modal-body p {
+    margin-bottom: 900px
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  .modal.modal-wide .modal-dialog {
+    width: 90%;
+    position: absolute;
+    margin-left: -45%;
+    padding: 20px;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+  /* irrelevant styling */
+
+  #modalFillIn .modal-body p {
+    margin-bottom: 900px
+  }
+}
